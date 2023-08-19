@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fast and Curious - Question</title>
+    <meta charset="utf-8">
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: black;
+            color: white;
+            font-family: 'Helvetica', sans-serif;
+        }
+        .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: black;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 10px;
+            color: white;
+            font-size: 14px;
+        }
+        .question {
+                font-size: 48px;
+                text-align: center;
+                margin-bottom: 40px;
+        }
+
+        .options {
+            display: flex;
+            justify-content: center;
+        }
+
+        .option {
+            margin: 0 10px;
+            font-size: 32px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .button-container input[type="submit"] {
+            font-size: 24px;
+        }
+        .cell-name {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+    </style>
+
+<div class="content">
+    <div class="header">
+        SORTI DE NULLE PART
+    </div>
+    <form action="/question" method="POST">
+        <h1 class="question">{{ question }}</h1>
+        <div class="options">
+            <div class="option">
+                <input type="radio" name="answer" value="1" id="answer1" required>
+                <label for="answer1">{{ answer1 }}</label>
+            </div>
+            <div class="option">
+                <input type="radio" name="answer" value="2" id="answer2">
+                <label for="answer2">{{ answer2 }}</label>
+            </div>
+        </div>
+        <div class="button-container">
+            <input type="submit" value="Suivant">
+    </form>
+    <div class="footer">
+        &copy; 2023 Fast and Curious - LA POUDRIERE
+    </div>
+    
+</div>
