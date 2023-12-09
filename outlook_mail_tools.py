@@ -340,11 +340,11 @@ def main():
     # print_last_email_info(20)
     # move_emails_to_folder()
     # print_last_email_info(20)
-    # archivage_past_years()
-    # move_emails_to_folder_archive(2021)
+    archivage_past_years()
+    move_emails_to_folder_archive(2021)
     # stats_email_by_sender()
     
-    stats_email_by_year_month()
+    # stats_email_by_year_month()
 
 if __name__ == "__main__":
     main()
